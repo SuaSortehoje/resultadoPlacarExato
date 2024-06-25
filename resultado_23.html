@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/images%20(37).jpg"> 
+<meta name="url" content="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/images%20(37).jpg">
+    
+    <title>BOLAO_MULTI_JOGO</title>
+    <style>
+        body {
+            text-align: center;
+            background: green;
+        }
+        h1 {
+            background: green;
+            color: white;
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .ft {
+            width: 50px;
+            height: 50px;
+        }
+        .inputnomeDoTime {
+            width: 80px;
+            text-align: center;
+            height: 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            outline: none;
+        }
+          .inputnomeDoTime:hover {
+            background:#00FF00;
+            color:black;
+        }
+        .content {
+            background-image: linear-gradient(90deg, gold, green, yellow);
+            text-align: center;
+            padding:2px;
+            margin-top:20%;
+            border-radius:10px;
+        }
+        #valor_input {
+            width: 30%;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px auto;
+            display: block;
+        }
+      
+        #total_display {
+            font-weight: bold;
+            color: white;
+            margin: 10px 0;
+        }
+        button {
+            border-radius: 10px;
+            margin: 1px;
+            height: 30px;
+            width: 45px;
+            outline: none;
+            cursor: pointer;
+            background:#007FFF;
+            color:white;
+            font-weight:bold;
+        }
+        button:hover {
+            background: #00ff00;
+            color:black;
+        }
+          .btn1{
+    display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 5px;
+            width: 50%;
+            margin-left: 90px;
+            background: teal;
+            color: white;
+            font-weight: bold;
+        }
+        .btn1:focus {
+            background: #00ff00;
+            color: black;
+        }
+        #nome {
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .proximo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .ima {
+            width: 100%;
+            height: 100px;
+            border-radius:10px;
+        }
+        .horas {
+            color: red;
+            font-weight: bold;
+            font-size:20px;
+        }
+        p {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body onload="verificarHorario()">
+
+    <div class="content">
+       <h1>RESULTADO DO DIA 23/06
+     <span class="horas">Horas 16:00</span></h1> 
+        
+        <img class="ima" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/images%20(37).jpg">
+
+
+        <!--TIME 01 -->
+        <div class="palpite">
+        
+            <img onclick="alert('atletico goianiese')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/athletico-pr.png" class="ft" alt="#">
+            <input type="tel" id="time1_input" class="inputnomeDoTime" value="1" maxlength="1" oninput="calcularTotal()"disabled/readonly>
+            x
+            <input type="tel" id="time2_input" class="inputnomeDoTime" value="1"  maxlength="1" oninput="calcularTotal()"disabled/readonly>
+            <img onclick="alert('criciuma')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/corinthians.png" class="ft" alt="#">
+        </div>
+        
+        <!--TIME 02 -->
+        <div class="palpite">
+            <img onclick="alert('botafogo.')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/bahia.png" class="ft" alt="#">
+            <input type="tel" id="time3_input" class="inputnomeDoTime" value="4"  maxlength="1" oninput="calcularTotal()"disabled/readonly>
+            x
+            <input type="tel" id="time4_input" class="inputnomeDoTime" value="1"  maxlength="1" oninput="calcularTotal()"disabled/readonly>
+            <img onclick="alert('athletico-pr')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/cruzeiro.png" class="ft" alt="#">
+        </div>
+
+        <!--TIME 03 -->
+        <div class="palpite">
+            <img onclick="alert('Santos')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/fluminense-pi.png" class="ft" alt="#">
+            <input type="tel" id="time5_input" class="inputnomeDoTime" value="0"  maxlength="1" oninput="calcularTotal()"disabled/readonly>
+            x
+            <input type="tel" id="time6_input" class="inputnomeDoTime" value="1"  maxlength="1" oninput="calcularTotal()"disabled/readonly>
+            <img onclick="alert('goias')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/flamengo.png" class="ft" alt="#">
+        </div>
+
+<p>ESSE SERIA O VALOR A RECEBER POR ESSE PALPITE A <span class="horas">R$ 5.00</span> REAL <span class="horas">R$ 3.500<span></p>
+      
+
+            <a href="jogosate09:00.html"><button class="btn3">09:00</button></a>
+            
+            <a href="jogosate14:00.html"><button class="btn3">15:00</button></a>
+       
+            <a href="jogosate19:00.html"><button class="btn5">19:00</button></a>
+
+            <a href="jogosate22:00.html"><button class="btn2">22:00</button></a>
+        </div>
+    </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/5571992290058?text=pix%20para%20Liberar%20O%20(CODIGO)%OAchave%20 pix%20telefone:%2071992290058" style="position:fixed;width:60px;height:60px;bottom:40px;right:20px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+  
+</body>
+</html>
